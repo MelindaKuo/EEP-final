@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>EEP Tzu-Chi</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="timeline.css" rel="stylesheet" type="text/css" />
+  <link href='https://fonts.googleapis.com/css?family=Belleza' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Anek Kannada' rel='stylesheet'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Gujarati&family=Yeseva+One&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="EEP.png">
+</head>
+
+<body>
+  <div class="navbar">
+    <div class="nb">
+      <input class="checkbox" type="checkbox" name="" id="" />
+      <div class="hamburger-lines">
+        <span class="line line1"></span>
+        <span class="line line2"></span>
+        <span class="line line3"></span>
+      </div>
+      <a href="index.html"><img class="logo" src="EEP.png" width="65px" height="65px"></a>
+      <div class="navmenu">
+        <a href="index.html">Home</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="events.html">Events</a>
+        <a href="lessons.html">Lessons</a>
+        <a href="tutors.html">Tutors</a>
+      </div>
+    </div>
+    <div class="main">
+
+      <div class="background">
+        <div class="bdesc">
+          <h1 class="name" style="font-family: 'Yeseva One', cursive;">English Exchange Program</h1>
+          <h3 class="ms" style="font-family: 'Noto Serif Gujarati', serif;">We are a group of high school volunteers who
+            are committed to bringing opportunities to Taiwanese elementary school students </h3>
+          <a href="lessons.html" style="text-decoration:none;"><button id="ce" class="currentevnt"
+              style="font-family: 'Noto Serif Gujarati', serif; padding: 2px;">Lesson 18 Graduation 4/16/23</button></a>
+        </div>
+
+
+        <!--             <div class="slideshow-container">
+              
+               <div class="mySlides fade">
+                  <img class = "background1" src="3.jpg" style = "width: 100% height: 100vh">
+               </div>
+               <div class="mySlides fade">
+                  <img class = "background2" src="back.jpg" style = "width: 100% height: 100vh">
+               </div>
+               <div class="mySlides fade">
+                  <img class = "background3" src="testeep.jpg" style = "width: 100% height: 100vh">
+               </div>
+              
+               <a class="pre" onclick="plusSlides(-1)">&#10094;</a>
+               <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+           
+            <br> 
+         </div> -->
+
+        <div class="slider">
+          <div class="slides">
+            <!--radio buttons start-->
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <!--radio buttons end-->
+            <!--slide images start-->
+            <div class="slide first">
+              <img src="testeep.jpg" alt="">
+            </div>
+            <div class="slide">
+              <img src="back.jpg" alt="">
+            </div>
+            <div class="slide">
+              <img src="3.jpg" alt="">
+            </div>
+
+            <!--slide images end-->
+            <!--automatic navigation start-->
+            <!--         <div class="navigation-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+
+        </div> -->
+            <!--automatic navigation end-->
+          </div>
+          <!--manual navigation start-->
+          <!--       <div class="navigation-manual">
+        
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+
+      </div> -->
+          <!--manual navigation end-->
+        </div>
+        <!--image slider end-->
+
+        <script type="text/javascript">
+          var counter = 1;
+          setInterval(function () {
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if (counter > 3) {
+              counter = 1;
+            }
+          }, 5500);
+        </script>
+
+      </div>
+      <div class="ua">
+        <h1>Upcoming Activities</h1>
+        <hr style="border: 4px solid #a9a8f0;
+  border-radius: 5px; width: 15%">
+        <div id="container2">
+          <a href="events.html"><button class="ael">
+              <span class="circle" aria-hidden="true">
+                <span class="icon arrow"></span>
+              </span>
+              <span class="button-text">All Events</span>
+            </button></a>
+
+
+          <a href="lessons.html"><button class="ael">
+              <span class="circle" aria-hidden="true">
+                <span class="icon arrow"></span>
+              </span>
+              <span class="button-text">All Lessons</span>
+            </button></a>
+        </div>
+
+        <iframe
+          src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1Zf4mlKnj9L9EamE4TPr4ge7w__0AJRaqTlbs0yZ1160&font=Default&lang=en&initial_zoom=2&height=450&theme=https://eep-1.melindakuo.repl.co/timeline.css'
+          width='100%' height='450' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe>
+
+
+
+        <!--          <div class = "hm">
+            <h1>Message From Program Leads</h1>
+           <hr style = "border: 4px solid #a9a8f0;
+  border-radius: 5px; width: 15%">
+                  <div id="container">
+                    <a href = "tutors.html"><button class="vt">
+                      <span class="circle" aria-hidden="true">
+                        <span class="icon arrow"></span>
+                      </span>
+                      <span class="button-text">Visit Tutors</span>
+                    </button></a>
+                  </div>
+            <div class = "mpl">
+               <div class = "message">
+                  <img class = "mp" src = "tutorphotos/Ellie.png" width = 185px height = 185px>
+                  <h2>Lorem ipsum dolor sit amet, consectetur</br>adipiscing elit, sed do eiusmod tempor </br>incididunt ut labore et dolore magna aliqua. </h2>
+               </div>
+               <div class = "message">
+                  <img class = "mp"src = "tutorphotos/Tammy.jpg" width = 185px height = 185px>
+                  <h2>Lorem ipsum dolor sit amet, consectetur</br>adipiscing elit, sed do eiusmod tempor </br>incididunt ut labore et dolore magna aliqua. </h2>
+               </div>
+            </div>
+         </div> -->
+
+
+        <div class="bottom-info">
+
+          <div class="tcinfo">
+
+            <a href="index.html"><img class="logo-bottom" src="EEP.png" width="110px" height="auto""></a>
+         
+         <div class = " tin">
+              <h3>Tzu Chi High School Contentment & Mutual Love Group</h3>
+          </div>
+        </div>
+
+      </div>
+
+
+      <script src="script.js"></script>
+      <script>
+
+        // document.getElementById('ce').innerHTML = new Date() >= new Date('2022-8-18') ? 'Lesson 1 Introduction 9/18/22' : 'Lesson 2 Introduction 9/25/22';
+        // document.getElementById('ce').innerHTML = new Date() >= new Date('2022-8-25')  ? 'Lesson 3 School 10/02/22' : 'Lesson 4 Restaurant 10/16/22';
+        // document.getElementById('ce').innerHTML = new Date() >= new Date('2022-10-02') ? 'Lesson 3 School 10/02/22' : 'Lesson 3 School 10/02/22';
+        // document.getElementById('ce').innerHTML = new Date() >= new Date('2022-10-16') ? 'Lesson 4 Restaurant 10/16/22' : 'Lesson 4 Restaurant 10/16/22';
+        // document.getElementById('ce').innerHTML = new Date() >= new Date('2022-10-23') ? 'Lesson 5 Halloween 10/23/22' : 'Lesson 5 Halloween 10/23/22';
+        // document.getElementById('ce').innerHTML = new Date() >= new Date('2022-11-06') ? 'Lesson 6 Food 11/06/22' : 'Lesson 6 Food 11/06/22';
+        // document.getElementById('ce').innerHTML = new Date() >= new Date('2022-11-13') ? 'Lesson 7 Weather 11/13/22' : 'Lesson 7 Weather 11/13/22';
+        // document.getElementById('ce').innerHTML = new Date() >= new Date('2022-11-20') ? 'Lesson 8 Thanksgiving 11/20/22' : 'Lesson 8 Thanksgiving 11/20/22';
+        // document.getElementById('ce').innerHTML = new Date() >= new Date('2022-12-04') ? 'Lesson 9 Music 12/04/22' : 'Lesson 9 Music 12/04/22';
+        // document.getElementById('ce').innerHTML = new Date() >= new Date('2022-12-11') ? 'Lesson 10 Seasons 12/11/22' : 'Lesson 10 Seasons 12/11/22';
+        // document.getElementById('ce').innerHTML = new Date() >= new Date('2022-12-18') ? 'Lesson 11 Christmas 12/18/22' : 'Lesson 11 Christmas 12/18/22';
+        // document.getElementById('ce').innerHTML = new Date() >= new Date('2023-1-08') ? 'Lesson 12 Animal 1/08/22' : 'Lesson 12 Animal 1/08/22';
+        // document.getElementById('ce').innerHTML = new Date() >= new Date('2023-2-19') ? 'Lesson 13 Free Time 2/19/23' : 'Lesson 13 Free Time 2/19/23';
+        // document.getElementById('ce').innerHTML = new Date() >= new Date('2023-3-05') ? 'Lesson 14 Shopping 3/05/23' : 'Lesson 14 Shopping 3/05/23';
+        // document.getElementById('ce').innerHTML = new Date() >= new Date('2023-3-12') ? 'Lesson 15 Sports 3/12/23' : 'Lesson 15 Sports 3/12/23';
+        // document.getElementById('ce').innerHTML = new Date() >= new Date('2023-3-19') ? 'Lesson 16 Transportation 3/19/23' : 'Lesson 16 Transportation 3/19/23';
+        // document.getElementById('ce').innerHTML = new Date() >= new Date('2023-3-26') ? 'Lesson 17 Travel 3/26/23' : 'Lesson 17 Travel 3/26/23';
+        // document.getElementById('ce').innerHTML = new Date() >= new Date('2023-4-16') ? 'Lesson 18 Graduation 4/16/23' : 'Lesson 18 Graduation 4/16/23';
+
+
+
+      </script>
+</body>
+
+</html>
