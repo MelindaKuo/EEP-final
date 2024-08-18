@@ -27,7 +27,7 @@ function displayTutors(alltutors){
       colnum++
     }
     $(".all-tutors").append(`
-      <a class = "apl" href = "tutorpages/`+alltutors[tutor][0]+`.html">
+      <a class = "apl">
           <div class = "column`+colnum+`">
               <img class  = "img1" src = "tutorphotos/`+alltutors[tutor][1]+`" alt ="picture of self " width = 200px height = 200px>
               <h2>`+alltutors[tutor][2]+`</h2>

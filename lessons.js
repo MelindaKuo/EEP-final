@@ -24,7 +24,7 @@ function displayLessons(lessons) {
   for (var lesson in lessons) {
     $(".lessons").append(`
     
-     <div onclick="myFunction()" id = "card" class = "card" style = "width: 465px; cursor: pointer" >
+     <div id = "card" class = "card" style = "width: 465px; cursor: pointer" >
       
             <img src = "lsnphotos/`+ lessons[lesson][0] + `" >
            
