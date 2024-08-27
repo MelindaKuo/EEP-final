@@ -1,5 +1,5 @@
 var alltutors = {
-  t1:["andre","Andre.jpg","Andre Chan"],
+  t1:["aidan","Aidan.jpg","Aidan Wang"],
   t2:["ariel","Ariel.jpg","Ariel Hung"],
   t3:["amelia","Amelia.jpg","Amelia Tsao"],
   t4:["darren","Darren.jpg","Darren Wu"],
@@ -15,7 +15,7 @@ var alltutors = {
   t14:["tristan","Tristan.jpg","Tristan Cox"],
   t15:["verina","Verina.jpg","Verina Mok"],
   t16:["yoli","Yoli.jpg","Yoli Vautherin"],
-  t17:["yoyo","Yoyo.jpg","Cheng Yo Tsai"],
+  t17:["yuyan","Yuyan.jpg","Yuyan"],
 
 }
 
