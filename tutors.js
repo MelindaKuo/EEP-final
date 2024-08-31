@@ -10,7 +10,7 @@ var alltutors = {
   t9:["jack","Jack.jpg","Jack Andrews"],
   t10:["jasmine","Jasmine.jpg","Jasmine Lu"],
   t11:["jeremy","Jeremy.jpg","Jeremy Sun"],
-  t12:["katelynL","katelynl.jpg","Katelyn Liu"],
+  t12:["katelyn","katelynl.jpg","Katelyn Liu"],
   t13:["katelynS","unknown.jpg","Katelyn Sun"],
   t14:["reese","Reese.jpg","Reese Zhou"],
   t15:["ruby","Ruby.jpg","Ruby Chen"],
