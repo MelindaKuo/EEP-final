@@ -8,12 +8,12 @@ var alltutors = {
   t7:["harris","Harris.jpg","Harris Liu"],
   t8:["henrik","Henrik.jpg","Henrik Liao"],
   t9:["ivan","Ivan.jpg","Ivan Lan"],
-  t11:["jack","Jack.jpg","Jack Andrews"],
-  t12:["jasmine","Jasmine.jpg","Jasmine Lu"],
-  t13:["jeremy","Jeremy.jpg","Jeremy Sun"],
-  t14:["katelyn","katelynl.jpg","Katelyn Liu"],
-  t15:["katelynS","unknown.jpg","Katelyn Sun"],
-  t10:["olivia","Olivia.jpg","Olivia Hsu"],
+  t10:["jack","Jack.jpg","Jack Andrews"],
+  t11:["jasmine","Jasmine.jpg","Jasmine Lu"],
+  t12:["jeremy","Jeremy.jpg","Jeremy Sun"],
+  t13:["katelyn","katelynl.jpg","Katelyn Liu"],
+  t14:["katelynS","unknown.jpg","Katelyn Sun"],
+  t15:["olivia","Olivia.jpg","Olivia Hsu"],
   t16:["reese","Reese.jpg","Reese Zhou"],
   t17:["ruby","Ruby.jpg","Ruby Chen"],
   t18:["sophieL","SophieL.jpg","Sophie Liao"],
@@ -33,7 +33,7 @@ function displayTutors(alltutors){
   colnum = 3
   for (var tutor in alltutors){
     if (count!=0&&count%4==0){
-      colnum++
+      colnum=3
     }
     $(".all-tutors").append(`
       <a class = "apl" href = "tutorpages/`+alltutors[tutor][0]+`.html">
@@ -44,6 +44,7 @@ function displayTutors(alltutors){
       </a>
     `)
     count++
+    colnum++
   }
 }
 
