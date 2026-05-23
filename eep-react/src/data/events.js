@@ -1,3 +1,5 @@
+const base = import.meta.env.BASE_URL;
+
 export const events = [
   {
     id: 'ev1',
@@ -6,7 +8,7 @@ export const events = [
     time: '9am-12pm',
     location: 'House',
     necessity: 'Optional',
-    photo: '/eventphotos/evntphoto.jpg',
+    photo: `${base}eventphotos/evntphoto.jpg`,
   },
   {
     id: 'ev2',
@@ -15,7 +17,7 @@ export const events = [
     time: '9am-12pm',
     location: 'House',
     necessity: 'Optional',
-    photo: '/eventphotos/evntphoto2.jpg',
+    photo: `${base}eventphotos/evntphoto2.jpg`,
   },
   {
     id: 'ev3',
@@ -24,7 +26,7 @@ export const events = [
     time: '9am-12pm',
     location: 'House',
     necessity: 'Optional',
-    photo: '/eventphotos/grad-photo.jpg',
+    photo: `${base}eventphotos/grad-photo.jpg`,
   },
   {
     id: 'ev4',
@@ -33,6 +35,6 @@ export const events = [
     time: '9am-12pm',
     location: 'House',
     necessity: 'Optional',
-    photo: '/eventphotos/package-photo.jpg',
+    photo: `${base}eventphotos/package-photo.jpg`,
   },
 ];

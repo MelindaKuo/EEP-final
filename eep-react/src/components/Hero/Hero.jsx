@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
 import styles from './Hero.module.css';
 
-const SLIDES = ['/testeep.jpg', '/back.jpg', '/3.jpg'];
+const base = import.meta.env.BASE_URL;
+const SLIDES = [`${base}testeep.jpg`, `${base}back.jpg`, `${base}3.jpg`];
 
 export default function Hero() {
   const [current, setCurrent] = useState(0);

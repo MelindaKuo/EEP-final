@@ -48,7 +48,7 @@ export default function Navbar() {
     <>
       <nav className={`${styles.navbar} ${scrolled ? styles.scrolled : ''}`}>
         <a href="#hero" className={styles.logoLink} onClick={() => setMenuOpen(false)}>
-          <img src="/EEP.png" alt="EEP Logo" className={styles.logo} />
+          <img src={`${import.meta.env.BASE_URL}EEP.png`} alt="EEP Logo" className={styles.logo} />
         </a>
 
         <div className={styles.navLinks}>

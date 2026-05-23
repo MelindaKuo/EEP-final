@@ -14,7 +14,7 @@ export default function About() {
 
       <div className={styles.contentSection}>
         <motion.img
-          src="/EEP Group.jpg"
+          src={`${import.meta.env.BASE_URL}EEP Group.jpg`}
           alt="EEP Group Photo"
           className={styles.groupPhoto}
           initial={{ opacity: 0, x: -40 }}

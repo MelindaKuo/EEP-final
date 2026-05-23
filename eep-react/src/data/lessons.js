@@ -1,7 +1,9 @@
+const base = import.meta.env.BASE_URL;
+
 export const lessons = [
   {
     id: 'l1',
-    image: '/lsnphotos/Self Introduction Beginner.png',
+    image: `${base}lsnphotos/Self Introduction Beginner.png`,
     title: 'Introduction',
     date: '9/22/25 US',
     beginnerUrl: 'https://docs.google.com/presentation/d/1E8dIJZfdNmy5A3r2Nq-AcyIiW7JbtTJQkzBGDtFybZA/edit?usp=drive_link',
@@ -10,7 +12,7 @@ export const lessons = [
   },
   {
     id: 'l2',
-    image: '/lsnphotos/Beginners Olympic Sports.png',
+    image: `${base}lsnphotos/Beginners Olympic Sports.png`,
     title: 'Olympic Sports',
     date: '9/29/25 US',
     beginnerUrl: 'https://docs.google.com/presentation/d/1MROwHB4Vs33gF9fjdZhVt8LpciAZujdPDstAxYm67OE/edit?usp=drive_link',
@@ -19,7 +21,7 @@ export const lessons = [
   },
   {
     id: 'l3',
-    image: '/lsnphotos/Beginning-Going to the Supermarket.png',
+    image: `${base}lsnphotos/Beginning-Going to the Supermarket.png`,
     title: 'Supermarket',
     date: '10/6/25 US',
     beginnerUrl: 'https://docs.google.com/presentation/d/15WXZKH3Gq-joEt6Oh810wsHNSnTDS_NQSYVcnnVYZEo/edit?usp=drive_link',
@@ -28,7 +30,7 @@ export const lessons = [
   },
   {
     id: 'l4',
-    image: '/lsnphotos/Day to Day English - Eating at a Restaurant Beginner Version.png',
+    image: `${base}lsnphotos/Day to Day English - Eating at a Restaurant Beginner Version.png`,
     title: 'Restaurant',
     date: '10/20/25 US',
     beginnerUrl: 'https://docs.google.com/presentation/d/1r7F0niyVsR_QbLU4ijIPOa6-DM9R_IHh_ygCVLq_dWY/edit?usp=drive_link',
@@ -37,7 +39,7 @@ export const lessons = [
   },
   {
     id: 'l5',
-    image: '/lsnphotos/Halloween Slides Beginner.png',
+    image: `${base}lsnphotos/Halloween Slides Beginner.png`,
     title: 'Halloween',
     date: '10/27/25 US',
     beginnerUrl: 'https://docs.google.com/presentation/d/1fwbPs42GouqCJpmjhhcqAV3AqbZQ5OtfxGd9flHDduc/edit?usp=drive_link',
@@ -46,7 +48,7 @@ export const lessons = [
   },
   {
     id: 'l6',
-    image: '/lsnphotos/EEP 24_25 Winter Beginner .png',
+    image: `${base}lsnphotos/EEP 24_25 Winter Beginner .png`,
     title: 'Winter',
     date: '11/03/25 US',
     beginnerUrl: 'https://docs.google.com/presentation/d/1ydFLT4bmyhyiZKRZiA4rwZPObzNXZaxc0ZIBYsdpdd0/edit?usp=drive_link',
@@ -55,7 +57,7 @@ export const lessons = [
   },
   {
     id: 'l7',
-    image: '/lsnphotos/EEP 2024-25 Thanksgiving - Beginner.png',
+    image: `${base}lsnphotos/EEP 2024-25 Thanksgiving - Beginner.png`,
     title: 'Thanksgiving',
     date: '12/08/25 US',
     beginnerUrl: 'https://docs.google.com/presentation/d/1i5dgR1TjFP4VANReWA08Pr_ao8vXGDwjCkaz20PcisE/edit?usp=drive_link',
@@ -64,7 +66,7 @@ export const lessons = [
   },
   {
     id: 'l8',
-    image: '/lsnphotos/Beginning Christmas.png',
+    image: `${base}lsnphotos/Beginning Christmas.png`,
     title: 'Christmas',
     date: '12/15/25 US',
     beginnerUrl: 'https://docs.google.com/presentation/d/1VdrCBfle9tMXDIEhoYc6qvZfBUKgsWO0GqqgK9Q2lcA/edit?usp=drive_link',
@@ -73,7 +75,7 @@ export const lessons = [
   },
   {
     id: 'l9',
-    image: "/lsnphotos/Visiting a Friend's House-Beginner Lesson.png",
+    image: `${base}lsnphotos/Visiting a Friend's House-Beginner Lesson.png`,
     title: 'Friends',
     date: '2/23/26 US',
     beginnerUrl: 'https://docs.google.com/presentation/d/1na098NZqOqazjshVbYNjVNHgctqbiN2aBq3MrfOtbe4/edit?usp=drive_link',
@@ -82,7 +84,7 @@ export const lessons = [
   },
   {
     id: 'l10',
-    image: '/lsnphotos/Beginner Lesson - Hobbies.png',
+    image: `${base}lsnphotos/Beginner Lesson - Hobbies.png`,
     title: 'Hobbies',
     date: '3/02/26 US',
     beginnerUrl: 'https://docs.google.com/presentation/d/1Y5_D5ZD6l0dh9dRwnlLoF_bh-CvmHB-EMNH5fjYaPus/edit?usp=drive_link',
@@ -91,7 +93,7 @@ export const lessons = [
   },
   {
     id: 'l11',
-    image: '/lsnphotos/beg lvl 24-25 emtions.png',
+    image: `${base}lsnphotos/beg lvl 24-25 emtions.png`,
     title: 'Emotions',
     date: '3/09/26 US',
     beginnerUrl: 'https://docs.google.com/presentation/d/128KHubfgPw389fL1AwbPSBB84uGthmI4pddrvyq1wD8/edit?usp=drive_link',
@@ -100,7 +102,7 @@ export const lessons = [
   },
   {
     id: 'l12',
-    image: '/lsnphotos/(Intermediate) Going to the Zoo.png',
+    image: `${base}lsnphotos/(Intermediate) Going to the Zoo.png`,
     title: 'Zoo',
     date: '3/16/26 US',
     beginnerUrl: 'https://docs.google.com/presentation/d/1dYTv62M_9yVDOQvte5Da7cUhTVDZK0l_8I50EHOuvYY/edit?usp=drive_link',
@@ -109,7 +111,7 @@ export const lessons = [
   },
   {
     id: 'l13',
-    image: '/lsnphotos/beg airport 24-25.png',
+    image: `${base}lsnphotos/beg airport 24-25.png`,
     title: 'Airport',
     date: '3/30/26 US',
     beginnerUrl: 'https://docs.google.com/presentation/d/1Tp-dOuF1f-zE0pGyAwLPzJ2qO-0idDGLF2LmWatPfwY/edit?usp=drive_link',
@@ -118,7 +120,7 @@ export const lessons = [
   },
   {
     id: 'l14',
-    image: '/lsnphotos/Summer-Beginner Lesson.png',
+    image: `${base}lsnphotos/Summer-Beginner Lesson.png`,
     title: 'Summer',
     date: '4/20/26 US',
     beginnerUrl: 'https://docs.google.com/presentation/d/1Rar-0gqlsvyKz-dx2g6cBh9U_gc9ZTYSOG4sdCE3rgM/edit?usp=drive_link',
@@ -127,7 +129,7 @@ export const lessons = [
   },
   {
     id: 'l15',
-    image: '/lsnphotos/Graduation Beginner.png',
+    image: `${base}lsnphotos/Graduation Beginner.png`,
     title: 'Graduation',
     date: '4/27/26 US',
     beginnerUrl: 'https://docs.google.com/presentation/d/1Aks4DyjhtO9Hv-CQz31d4-Vxj0F2k4srnHy_LurulFQ/edit?usp=drive_link',
