@@ -1,0 +1,97 @@
+.about {
+  padding-top: var(--navbar-height);
+  background: var(--color-bg);
+}
+
+.missionBanner {
+  position: relative;
+  height: 280px;
+  background: url('/abtus.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.bannerOverlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(114, 160, 193, 0.82);
+}
+
+.bannerContent {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: #fff;
+}
+
+.missionTitle {
+  font-family: var(--font-hero);
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  margin-bottom: 0.6rem;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.missionSub {
+  font-family: var(--font-hero-sub);
+  font-size: clamp(1rem, 2.5vw, 1.3rem);
+  opacity: 0.92;
+}
+
+.contentSection {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  display: flex;
+  gap: 3rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.groupPhoto {
+  width: 380px;
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: var(--shadow-card);
+  flex-shrink: 0;
+  object-fit: cover;
+}
+
+.qaSection {
+  flex: 1;
+  min-width: 260px;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.qaBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.question {
+  font-family: var(--font-about-q);
+  font-size: 1.8rem;
+  color: var(--color-mid-blue);
+  font-weight: 600;
+}
+
+.answer {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #555;
+}
+
+@media (max-width: 700px) {
+  .contentSection {
+    flex-direction: column;
+    padding: 2.5rem 1.2rem;
+  }
+
+  .groupPhoto {
+    width: 100%;
+  }
+}

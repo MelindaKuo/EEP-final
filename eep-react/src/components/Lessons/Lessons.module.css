@@ -1,0 +1,166 @@
+.lessonsSection {
+  padding: calc(var(--navbar-height) + 3rem) 2rem 5rem;
+  background: var(--color-bg-lessons);
+  min-height: 100vh;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.heading {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 4vw, 3rem);
+  color: #333;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.4rem;
+}
+
+.subheading {
+  color: #777;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.disclaimer {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+  font-family: var(--font-heading);
+  font-size: 0.9rem;
+  color: #666;
+  background: rgba(203, 212, 241, 0.3);
+  padding: 0.6rem 1.5rem;
+  border-radius: 30px;
+}
+
+.divider {
+  color: var(--color-purple-light);
+}
+
+.lessonGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  gap: 1.8rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* ── Card ────────────────────────────────────────────── */
+.card {
+  background: #fff;
+  border-radius: var(--border-radius-card);
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
+  transition: box-shadow 0.25s ease;
+  cursor: default;
+}
+
+.card:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.14);
+}
+
+.cardImageWrap {
+  height: 175px;
+  overflow: hidden;
+  background: #f0f4fa;
+}
+
+.cardImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  transition: transform 0.4s ease;
+}
+
+.card:hover .cardImage {
+  transform: scale(1.04);
+}
+
+.cardBody {
+  padding: 1rem 1.2rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.title {
+  font-family: var(--font-lesson);
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.date {
+  font-size: 0.82rem;
+  color: var(--color-date);
+  font-family: var(--font-heading);
+  letter-spacing: 0.02em;
+}
+
+/* ── Level buttons (preserve original expanding circle animation) ── */
+.levelButtons {
+  display: flex;
+  gap: 0.6rem;
+  margin-top: 0.6rem;
+}
+
+.levelLink {
+  display: block;
+}
+
+.levelBtn {
+  position: relative;
+  width: 52px;
+  height: 52px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  font-family: var(--font-heading);
+  font-size: 0.9rem;
+  font-weight: 700;
+  transition:
+    width 0.45s cubic-bezier(0.65, 0, 0.076, 1),
+    height 0.45s cubic-bezier(0.65, 0, 0.076, 1),
+    font-size 0.3s ease;
+}
+
+.circleB,
+.circleI {
+  background: var(--color-lesson-b);
+  color: #555;
+}
+
+.circleA {
+  background: var(--color-lesson-a);
+  color: #fff;
+}
+
+.levelBtn:hover .circle {
+  width: 48px;
+  height: 48px;
+  font-size: 1rem;
+}
+
+@media (max-width: 600px) {
+  .lessonGrid {
+    grid-template-columns: 1fr;
+  }
+}

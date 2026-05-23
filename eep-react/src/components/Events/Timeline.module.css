@@ -1,0 +1,207 @@
+/* ── Outer wrapper ────────────────────────────────── */
+.timelineOuter {
+  margin: 4rem 0 0;
+  padding: 0;
+  width: 100%;
+}
+
+.timelineHeading {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  text-align: center;
+  color: var(--color-mid-blue);
+  margin-bottom: 2rem;
+  letter-spacing: 0.04em;
+}
+
+/* ── Horizontal scroll container ──────────────────── */
+.scrollWrapper {
+  overflow-x: auto;
+  overflow-y: visible;
+  padding: 1rem 2rem 1.5rem;
+  /* smooth scroll on iOS */
+  -webkit-overflow-scrolling: touch;
+  /* subtle scrollbar */
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-purple-nav) transparent;
+}
+
+.scrollWrapper::-webkit-scrollbar {
+  height: 6px;
+}
+
+.scrollWrapper::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scrollWrapper::-webkit-scrollbar-thumb {
+  background: var(--color-purple-nav);
+  border-radius: 3px;
+}
+
+/* ── Track: horizontal flex row ───────────────────── */
+.track {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  min-width: max-content;
+  /* The horizontal line runs through the dotRow height */
+  position: relative;
+}
+
+/* Line drawn as a pseudo-element spanning the full track width */
+.track::before {
+  content: '';
+  position: absolute;
+  /* dotRow is 28px tall, top slots are 130px — line sits in the middle */
+  top: calc(130px + 14px); /* topSlot height + half dotRow */
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--color-purple-nav);
+  z-index: 0;
+}
+
+/* ── Entry column (one per lesson/event) ──────────── */
+.entryCol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 140px;
+  flex-shrink: 0;
+}
+
+.topSlot {
+  height: 130px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+.dotRow {
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+.bottomSlot {
+  height: 130px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+/* ── Month separator column ────────────────────────── */
+.monthCol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100px;
+  flex-shrink: 0;
+}
+
+.monthTop {
+  height: 130px;
+}
+
+.monthDot {
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+}
+
+.monthBottom {
+  height: 130px;
+}
+
+.monthPill {
+  background: var(--color-mid-blue);
+  color: #fff;
+  font-family: var(--font-heading);
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  padding: 0.3rem 0.9rem;
+  border-radius: 20px;
+  white-space: nowrap;
+  box-shadow: 0 2px 8px rgba(114, 160, 193, 0.4);
+}
+
+/* ── Dot ──────────────────────────────────────────── */
+.dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  flex-shrink: 0;
+}
+
+.dotLesson {
+  background: var(--color-purple-light);
+  box-shadow: 0 0 0 2px var(--color-purple-light);
+}
+
+.dotEvent {
+  background: var(--color-lead-gold);
+  box-shadow: 0 0 0 2px var(--color-lead-gold);
+}
+
+/* ── Card ─────────────────────────────────────────── */
+.card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: var(--shadow-card);
+  padding: 0.6rem 0.75rem;
+  width: 118px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.13);
+}
+
+.cardEvent {
+  border-left: 3px solid var(--color-lead-gold);
+}
+
+.typeBadge {
+  display: inline-block;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  padding: 0.1rem 0.45rem;
+  border-radius: 20px;
+  margin-bottom: 0.3rem;
+  text-transform: uppercase;
+}
+
+.badgeLesson {
+  background: #e8eaff;
+  color: var(--color-scribe-purple);
+}
+
+.badgeEvent {
+  background: #fdf2e3;
+  color: var(--color-lead-gold);
+}
+
+.entryTitle {
+  font-family: var(--font-heading);
+  font-size: 0.82rem;
+  color: #333;
+  margin-bottom: 0.15rem;
+  line-height: 1.2;
+}
+
+.entryDate {
+  font-size: 0.7rem;
+  color: var(--color-date);
+}

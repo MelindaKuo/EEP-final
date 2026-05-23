@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Belleza&family=Yeseva+One&family=Noto+Serif+Gujarati:wght@400;500&family=Anek+Kannada:wght@300;400;500&family=Dancing+Script:wght@400;600&display=swap');
+
+:root {
+  --color-primary-blue: #59A8DD;
+  --color-mid-blue: #72A0C1;
+  --color-purple-light: #a9a8f0;
+  --color-purple-nav: #B9BCE6;
+  --color-purple-footer: #b0b6e8;
+  --color-lead-gold: #B78F4E;
+  --color-scribe-purple: #9da0cf;
+  --color-curriculum-blue: #8da5c2;
+  --color-bg: #fcfcfc;
+  --color-bg-lessons: #edf4f7;
+  --color-bg-events: #f7f7f7;
+  --color-date: #9da0cf;
+  --color-lesson-b: #cbd4f1;
+  --color-lesson-a: #b59040;
+  --font-heading: 'Belleza', sans-serif;
+  --font-hero: 'Yeseva One', cursive;
+  --font-hero-sub: 'Noto Serif Gujarati', serif;
+  --font-lesson: 'Anek Kannada', sans-serif;
+  --font-about-q: 'Dancing Script', cursive;
+  --font-body: Helvetica, Arial, sans-serif;
+  --navbar-height: 75px;
+  --border-radius-card: 10px;
+  --shadow-card: 0 4px 12px rgba(0, 0, 0, 0.12);
+  --shadow-nav: 0 2px 8px rgba(146, 161, 176, 0.2);
+  --transition-base: 0.25s ease;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-bg);
+  font-family: var(--font-body);
+  overflow-x: hidden;
+  color: #333;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+}

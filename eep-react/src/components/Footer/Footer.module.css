@@ -1,0 +1,44 @@
+.footer {
+  background: var(--color-purple-footer);
+  padding: 2.5rem 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.logo {
+  height: 64px;
+  width: auto;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.orgName {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  color: #333;
+  letter-spacing: 0.04em;
+}
+
+.orgSub {
+  font-size: 0.9rem;
+  color: #555;
+  letter-spacing: 0.02em;
+}
+
+.credit {
+  font-size: 0.78rem;
+  color: #666;
+  margin-top: 0.5rem;
+}
